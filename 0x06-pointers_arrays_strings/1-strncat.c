@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  *  * _strncat - concatenates n bytes from a string to another
@@ -7,8 +7,7 @@ nclude "main.h"
  *     * @n: number of bytes of str to concatenate
  *      *
  *       * Return: a pointer to the resulting string dest
- *        */
-char *_strncat(char *dest, char *src, int n)
+ *        */char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 	i = 0;
@@ -22,5 +21,6 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 	}
 	dest[i] = '\0';
+
 	return (dest);
 }
